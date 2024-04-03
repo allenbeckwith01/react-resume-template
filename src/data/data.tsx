@@ -1,22 +1,11 @@
+// data.tsx
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
-import {
-  About,
-  Hero,
-  HomepageMeta,
-  Social,
-} from './dataDef';
-
+import { Hero, HomepageMeta, Social } from './dataDef';
 export const homePageMeta: HomepageMeta = {
   title: 'React Resume Template',
   description: "Example site built with Tim Baker's react resume template",
 };
-export const SectionId = {
-  Hero: 'hero',
-  About: 'about',
-  Contact: 'contact',
-} as const;
-
 export const heroData: Hero = {
   imageSrc: heroImage,
   name: `Allen Beckwith`,
@@ -32,7 +21,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: `#${SectionId.Contact}`,
+      href: `#contact`, // Make sure this ID exists in your HTML
       text: 'Contact',
       primary: false,
     },
@@ -40,5 +29,4 @@ export const heroData: Hero = {
 };
 export const socialLinks: Social[] = [
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/allen01beckwith/'},
-  // Add or update social links as needed
 ];
