@@ -8,7 +8,6 @@ import {
 } from '@heroicons/react/24/outline';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
-import testimonialImage from '../images/testimonial.webp';
 import {
   About,
   ContactSection,
@@ -16,7 +15,6 @@ import {
   Hero,
   HomepageMeta,
   Social,
-  TestimonialSection,
   TimelineItem,
 } from './dataDef';
 export const homePageMeta: HomepageMeta = {
@@ -27,11 +25,6 @@ export const SectionId = {
   Hero: 'hero',
   About: 'about',
   Contact: 'contact',
-  Portfolio: 'portfolio',
-  Resume: 'resume',
-  Skills: 'skills',
-  Stats: 'stats',
-  Testimonials: 'testimonials',
 } as const;
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 export const heroData: Hero = {
