@@ -1,6 +1,5 @@
 import {
   AcademicCapIcon,
-  ArrowDownTrayIcon,
   BuildingOffice2Icon,
   CalendarIcon,
   MapIcon,
@@ -10,12 +9,9 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
 import {
   About,
-  ContactSection,
-  ContactType,
   Hero,
   HomepageMeta,
   Social,
-  TimelineItem,
 } from './dataDef';
 export const homePageMeta: HomepageMeta = {
   title: 'React Resume Template',
@@ -42,12 +38,6 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
-      primary: true,
-      Icon: ArrowDownTrayIcon,
-    },
-    {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
       primary: false,
@@ -55,16 +45,10 @@ export const heroData: Hero = {
   ],
 };
 export const aboutData: About = {
-  profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  profileImageSrc: heroImage, // Ensure you have this image imported or updated
+  description: `Your bio...`,
   aboutItems: [
     {label: 'Location', text: 'Dallas, TX', Icon: MapIcon},
-    {label: 'Age', text: '22', Icon: CalendarIcon},
-    {label: 'Interests', text: 'Piano, Clarinet, Running', Icon: SparklesIcon},
-    {label: 'Study', text: 'Northwestern University', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'AT&T Inc.', Icon: BuildingOffice2Icon},
   ],
 };
 export const socialLinks: Social[] = [
